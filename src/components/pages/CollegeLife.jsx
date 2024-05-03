@@ -25,7 +25,7 @@ const CollegeLife = () => {
                     className="w-full flex flex-col items-center justify-center pt-2
         sticky top-[8vh] z-40 bg-unsij-black-50 "
                 >
-                    <h1 className="font-bold text-2xl md:text-3xl 2xl:text-4xl">
+                    <h1 className="mt-8 text-black font-bold text-3xl md:text-4xl 2xl:text-5xl pb-2">
                         Vida universitaria
                     </h1>
                     <p className='px-1 md:px-16 lg:px-32 text-center text-sm md:text-lg lg:text-xl py-2 md:py-4 lg:py-8 font-medium'>Explora nuestras galerías de fotos para descubrir las emocionantes actividades que se llevan a
