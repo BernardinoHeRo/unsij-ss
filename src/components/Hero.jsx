@@ -1,6 +1,7 @@
 import React from "react";
 import backgroundImage from "../assets/unsij/background/unsij.jpeg";
 import Divider from "./Divider.jsx"; // Ruta de tu imagen de fondo
+import logo from '../assets/unsij/logo/unsij.png'
 
 export const Hero = () => {
     const divStyle = {
@@ -37,10 +38,11 @@ export const Hero = () => {
         padding: "20px", // Espaciado interno para el texto
         maxWidth: "80%" // Ancho máximo del texto
     };
+
     const navbarHeight = window.innerHeight * 0.08;
     return (
         <>
-            <div id="index" style={divStyle}>
+            <div id="index" style={divStyle} className='md:bg-fixed'>
                 {/* Capa de superposición con fondo semi-transparente */}
                 <div style={overlayStyle}>
                     <h1

@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        serif: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+      },
       colors: {
         "unsij-daintree": {
           50: "#e9fffd",
@@ -21,17 +24,17 @@ export default {
           950: "#002f3b",
         },
         "unsij-green": {
-          50: "#eefff5",
-          100: "#d8ffea",
-          200: "#b4fed6",
-          300: "#79fcb7",
-          400: "#38f08f",
-          500: "#0ed96f",
-          600: "#05b458",
-          700: "#088d49",
-          800: "#0c6f3d",
-          900: "#0c5b34",
-          950: "#003b1f",
+          '50': '#f0fdf4',
+          '100': '#dcfce7',
+          '200': '#bbf7d0',
+          '300': '#86efac',
+          '400': '#4ade80',
+          '500': '#22c55e',
+          '600': '#16a34a',
+          '700': '#15803d',
+          '800': '#166534',
+          '900': '#14532d',
+          '950': '#052e16',
         },
         "unsij-violet": {
           50: "#faf3ff",

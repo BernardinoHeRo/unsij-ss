@@ -1,10 +1,10 @@
 import React from "react";
-import lineaDeCaptura from "../../assets/pdf/lineaDeCaptura.pdf";
-import actaNacimiento from "../../assets/requerimientos/actaNacimiento.png";
-import certSecundaria from "../../assets/requerimientos/certificado.jpg";
-import certBachi from "../../assets/requerimientos/certificado.jpg";
-import curp from "../../assets/requerimientos/curp.png";
-import fotos from "../../assets/requerimientos/fotografias.png";
+import lineaDeCaptura from "../../../assets/pdf/lineaDeCaptura.pdf";
+import actaNacimiento from "../../../assets/requerimientos/actaNacimiento.png";
+import certSecundaria from "../../../assets/requerimientos/certificado.jpg";
+import certBachi from "../../../assets/requerimientos/certificado.jpg";
+import curp from "../../../assets/requerimientos/curp.png";
+import fotos from "../../../assets/requerimientos/fotografias.png";
 
 const Requirements = () => {
   const requirementsData = [

@@ -1,12 +1,12 @@
 import React from 'react'
-import Courses from "./Card/Courses.jsx";
+import Courses from "./Courses.jsx";
 
 export const EducativeOffer = () => {
-    const navbarHeight = window.innerHeight * 0.22;
+    const navbarHeight = window.innerHeight * 0.08;
     const minHeight = `calc(100vh - ${navbarHeight}px)`;
     return (
         <>
-            <div id="offer" className='flex flex-col items-center pb-8'>
+            <div id="offer" className='flex flex-col items-center pb-8 z-30'>
                 <h1 className="mt-8 text-white font-bold text-3xl md:text-4xl 2xl:text-5xl pb-2">
                     Oferta educativa
                 </h1>

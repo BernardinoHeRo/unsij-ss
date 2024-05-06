@@ -13,7 +13,7 @@ export const ScholarShips = () => {
                 <h1 className="mt-8 text-black font-bold text-3xl md:text-4xl 2xl:text-5xl pb-2">
                     Becas
                 </h1>
-                <div className="mt-8 min-h-[50vh] w-[99%] xl:max-w-[75%] mx-auto justify-center justify-items-center
+                <div className="mt-8 min-h-[50vh] w-[90%] md:w-[99%] xl:max-w-[75%] mx-auto justify-center justify-items-center
                      grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                     <div className="bg-white shadow-lg rounded-xl w-full">

@@ -20,6 +20,7 @@ import 'swiper/swiper-bundle.css';
 // import required modules
 import {Autoplay, FreeMode, Navigation, Pagination} from 'swiper/modules';
 import {FaFacebookF} from "react-icons/fa";
+import {Link} from "react-router-dom";
 
 const programsData = {
     program: [
@@ -126,7 +127,7 @@ export const Courses = () => {
                 {programsData.program.map((program) => (
                     <SwiperSlide key={program.id}>
                         <div
-                            className="w-full mx-auto group relative cursor-pointer items-center justify-center rounded-lg
+                            className="w-full mx-auto group relative items-center justify-center rounded-lg
                             overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black">
                             <div className="h-96 w-92">
                                 <img
@@ -160,11 +161,11 @@ export const Courses = () => {
                                             <FaFacebookF className='text-3xl text-white'/>
                                         </a>
                                     )}
-                                    <a
-                                        href='#offer'
+                                    <Link
+                                        to={`/curricular/${program.id}`}
                                         className="text-md rounded-xl text-white bg-orange-600 px-2 py-2 hover:bg-orange-700">
                                         Plan de estudios
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

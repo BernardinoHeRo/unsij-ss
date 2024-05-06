@@ -11,8 +11,8 @@ import {
 } from "yet-another-react-lightbox/plugins";
 import "yet-another-react-lightbox/plugins/captions.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import Images from "../Images.jsx";
-import images from "../AllImages.js";
+import Images from "../collegeLife/Images.jsx";
+import images from "../collegeLife/AllImages.js";
 
 const CollegeLife = () => {
   const navbarHeight = window.innerHeight * 0.22;

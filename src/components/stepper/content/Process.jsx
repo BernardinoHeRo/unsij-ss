@@ -1,5 +1,5 @@
 import React from "react";
-import fichaEscolar from "../../assets/pdf/fichaEscolar.pdf";
+import fichaEscolar from "../../../assets/pdf/fichaEscolar.pdf";
 
 const Process = () => {
   const processData = {

@@ -3,11 +3,13 @@ import logo from "../../assets/unsij/logo/unsij.png";
 import {Link} from "react-router-dom";
 import {IoMdClose, IoMdMenu} from "react-icons/io";
 import {Link as ScrollLink} from "react-scroll";
+import {FaFacebook} from "react-icons/fa";
+import {TbWorldWww} from "react-icons/tb";
 
 export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [items, setItems] = useState([]);
-    const [activeLink, setActiveLink] = useState(null);
+    const [activeLink, setActiveLink] = useState(1);
 
     const menuRef = useRef();
 
@@ -57,53 +59,73 @@ export const NavBar = () => {
         setIsOpen(false); // Cerrar el menú al hacer clic en un enlace
     };
     const navbarHeight = window.innerHeight * 0.08;
+
+    const dropShadowImg = {
+        filter: "drop-shadow( .5px 1px 0px #FFF )",
+    }
+
     return (
-        <nav className="sticky top-0 z-50 shadow shadow-unsij-black-50">
-            <div className="h-[8vh] bg-unsij-green-950 flex items-center justify-between lg:justify-around px-4">
+        <nav className="sticky top-0 shadow-sm shadow-unsij-black-950 z-50">
+            {/* Barra de navegación en dispositivos grandes*/}
+            <div className="h-[8vh] bg-unsij-green-950 flex items-center justify-between lg:justify-around">
                 <Link
                     to="/"
                     className="flex flex-row gap-1 justify-center items-center"
                 >
-                    <img className="block w-16" src={logo} alt="Logo"/>
-                    <span
-                        className="mr-4 text-white text-xs md:text-2xl lg:text-xl 2xl:text-2xl font-medium hidden lg:inline">
-            Universidad de la Sierra Juárez
-          </span>
+                    <img className="block w-14" src={logo} alt="Logo" style={dropShadowImg}/>
                 </Link>
 
-                <span className="mr-1 text-white text-4xl lg:hidden font-medium">
-          UNSIJ
-        </span>
+                <span className="mr-1 text-white text-4xl lg:hidden font-bold font-serif">UNSIJ</span>
 
                 {/* Links */}
-                <div className="hidden lg:block">
-                    <div className="ml-10 flex items-center space-x-4 text-unsij-black-50 ">
-                        {items.map(item => {
-                            const isRelativeUrl = item.url.startsWith('/');
-                            const LinkComponent = isRelativeUrl ? Link : ScrollLink;
-                            const linkProps = isRelativeUrl
-                                ? {to: item.url}
-                                : {to: item.url, spy: true, smooth: true, duration: 1000, offset: -navbarHeight};
 
-                            return (
-                                <LinkComponent
-                                    key={item.id}
-                                    {...linkProps}
-                                    className={`cursor-pointer text-sm sm:text-base md:text-lg lg:text-base 2xl:text-lg font-medium px-3 py-2
-                                         hover:text-unsij-teak-500 hover:saturate-200 hover:brightness-200${
-                                        activeLink === item.id
-                                            ? "text-unsij-teak-500 saturate-200 brightness-200"
-                                            : "text-unsij-black-50 hover:text-unsij-teak-500 hover:saturate-200 hover:brightness-200"
-                                    }`}
-                                    onClick={() => handleLinkClick(item.id)}
-                                >
-                                    {item.text}
-                                </LinkComponent>
-                            );
-                        })}
-                    </div>
+                <div className="hidden lg:flex lg:flex-row items-center gap-8 text-unsij-black-50 ">
+                    {items.map(item => {
+                        const isRelativeUrl = item.url.startsWith('/');
+                        const LinkComponent = isRelativeUrl ? Link : ScrollLink;
+                        const linkProps = isRelativeUrl
+                            ? {to: item.url}
+                            : {to: item.url, spy: true, smooth: true, duration: 1000, offset: -navbarHeight};
+
+                        return (
+                            <LinkComponent
+                                key={item.id}
+                                {...linkProps}
+                                className={`cursor-pointer text-[16px] md:text-[18px] font-medium hover:text-unsij-green-800 
+                                hover:saturate-200 hover:brightness-200${
+                                    activeLink === item.id
+                                        ? " text-unsij-green-800 saturate-200 brightness-200"
+                                        : " text-unsij-black-50"
+                                }`}
+                                onClick={() => handleLinkClick(item.id)}
+                            >
+                                {item.text}
+                            </LinkComponent>
+                        );
+                    })}
+
                 </div>
 
+                <div className="hidden lg:flex flex-row items-center gap-4">
+                    <div>
+                        <a
+                            href="https://www.facebook.com/UNSIJ.SUNEO/?locale=es_LA"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <FaFacebook className="text-3xl text-unsij-black-50"/>
+                        </a>
+                    </div>
+                    <div>
+                        <a
+                            href="https://www.unsij.edu.mx/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <TbWorldWww className="text-4xl text-unsij-black-50"/>
+                        </a>
+                    </div>
+                </div>
                 <div className="-mr-2 flex lg:hidden">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
@@ -125,7 +147,7 @@ export const NavBar = () => {
                 } lg:hidden pt-4 border-t-teal-50 border-t-[1px] absolute top-22 inset-x-0 z-50 
                  bg-unsij-green-950 text-center h-screen transition-all ease-in duration-1000`}
             >
-                <div className="px-2 pt-2 pb-3 sm:px-3">
+                <div className="">
                     {items.map(item => {
                         const isRelativeUrl = item.url.startsWith('/');
                         const LinkComponent = isRelativeUrl ? Link : ScrollLink;
