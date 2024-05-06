@@ -147,7 +147,7 @@ export const NavBarCollege = ({onComponentChange, activeComponent, color}) => {
         </nav>
     );
 }
-// Valida las props usando PropTypes
+// Válida las props usando PropTypes
 NavBarCollege.propTypes = {
     onComponentChange: PropTypes.func.isRequired,
     activeComponent: PropTypes.string.isRequired, // Asegúrate de que activeComponent sea una cadena

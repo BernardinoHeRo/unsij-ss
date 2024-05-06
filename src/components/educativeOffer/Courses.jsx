@@ -48,7 +48,7 @@ const programsData = {
         }, {
             id: 4,
             "infoColor": "#124022",
-            nombre: 'Licenciatura en Ciencias Ambientales',
+            nombre: 'Licenciatura en Ciencias Ambientales para el desarrollo comunitario',
             informacion: 'Analiza ecosistemas, propone soluciones sostenibles y aplica técnicas de remediación. Plan de estudios integral y amplio campo de acción. Únete para liderar el cambio hacia un futuro ambientalmente consciente.',
             imagen: ambientalImage,
             facebook: "https://www.facebook.com/Licenciatura.en.Ciencias.Ambientales.UNSIJ/?locale=es_LA",

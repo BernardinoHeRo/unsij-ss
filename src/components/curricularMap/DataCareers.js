@@ -2,7 +2,7 @@ const dataCareers = [
         {
             "id": 3,
             "content": {
-                "color":"#1C55a7",
+                "color":"#174485",
                 "headOfDepartment": "M.C. Juan Gabriel Ruiz Ruiz ",
                 "email": "informatica@unsij.edu.mx",
                 "title": "Ingeniería en Desarrollo de Software y Sistemas Inteligentes",

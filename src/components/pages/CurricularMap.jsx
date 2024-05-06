@@ -43,7 +43,7 @@ const CurricularMap = () => {
         // Al montar el componente, establece 'InfoCareer' como el componente activo
         setActiveComponent('InfoCareer');
         // Calcular la posición de desplazamiento
-        const scrollPosition = contentRef.current.offsetTop - (window.innerHeight * 0.08);
+        const scrollPosition = contentRef.current.offsetTop - (window.innerHeight * 0.30);
 
         // Hacer scroll hacia el contenedor con desplazamiento suave
         window.scrollTo({
