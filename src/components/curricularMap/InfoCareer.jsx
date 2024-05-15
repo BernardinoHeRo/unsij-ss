@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Mission from "./Mission.jsx";
 import Vision from "./Vision.jsx";
 import Objetive from "./Objetive.jsx";
+import Main from "./Main.jsx";
 
 
 export const InfoCareer = ({data}) => {

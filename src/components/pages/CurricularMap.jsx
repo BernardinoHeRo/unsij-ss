@@ -59,11 +59,12 @@ const CurricularMap = () => {
                 activeComponent={activeComponent}
                 color={color}/>
             <div className='w-full bg-white flex flex-col items-center justify-center '>
+                {/*
                 <span className='text-2xl font-bold py-2'>Plan de estudios</span>
                 <span className='text-lg md:text-2xl text-center font-bold'>{title}</span>
                 <span className='text-base md:text-xl'>{headOfDepartment}</span>
                 <span className='text-base md:text-xl pb-4'>{email}</span>
-
+                */}
                 <div ref={contentRef} className='w-full'>
                     {/* Renderizar el componente activo basado en el estado */}
                     {activeComponent === 'InfoCareer' && <InfoCareer data={{mission, vision, objective}}/>}
