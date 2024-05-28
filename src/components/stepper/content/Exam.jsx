@@ -7,21 +7,21 @@ const Exam = () => {
       year: 2024,
       day: 25,
       dayOfWeek: "Sábado",
-      time: "8:00 am to 7:00 pm"
+      time: "Inicio: 8:00 am"
     },
     {
       month: "Julio",
       year: 2024,
       day: 1,
       dayOfWeek: "Lunes",
-      time: "8:00 am to 7:00 pm"
+      time: "Inicio: 10:00 am"
     }
   ];
 
   return (
     <div className="pb-8">
       <h1 className="text-center text-black text-xl md:text-3xl 2xl:text-4xl font-bold">
-        Examen de admisión
+        Examen de ingreso
       </h1>
       <div className="mt-2 flex flex-col items-center justify-center">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pb-8">
@@ -51,7 +51,7 @@ const Exam = () => {
         <div
             className="mt-2 py-2 px-16 col-span-5 flex items-center justify-center bg-unsij-teak-400">
           <h1 className="text-xl text-center">
-            <strong className="text-2xl pr-2">Nota!!!</strong>
+            <strong className="text-2xl pr-2">¡¡Nota!!</strong>
             La fecha y hora se asignan el día del tramite de ficha escolar.
           </h1>
         </div>

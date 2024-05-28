@@ -18,7 +18,7 @@ export const NavBar = () => {
             {id: 1, text: "Inicio", url: "index"},
             {id: 2, text: "Admisión", url: "admission"},
             {id: 3, text: "Oferta educativa", url: "offer"},
-            {id: 4, text: "Becas", url: "ships"},
+            {id: 4, text: "Servicios", url: "ships"},
             {id: 5, text: "Vida universitaria", url: "college"},
             {id: 6, text: "Contacto", url: "contact"},
         ];

@@ -62,12 +62,11 @@ export const Hero = () => {
                         className="mt-2 bg-unsij-green-800 text-white font-bold py-2 px-4 rounded-md uppercase
                        hover:transform hover:scale-105 hover:border-2"
                     >
-                        <p className='[text-shadow:_0_2px_0_rgb(0_0_0_/_100%)]'>Nuestra historia</p>
+                        <p className='[text-shadow:_0_2px_0_rgb(0_0_0_/_100%)]'>Explora la UNSIJ</p>
                     </a>
                 </div>
             </div>
             <Divider
-                text="Explora la UNSIJ"
                 url="admission"
                 navbarHeight={navbarHeight}
             />

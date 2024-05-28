@@ -8,7 +8,7 @@ const Course = () => {
   return (
     <div className="pb-8">
       <h1 className="text-center text-black text-xl md:text-3xl 2xl:text-4xl font-bold">
-        Examen de admisión
+          Curso propedéutico
       </h1>
       <div className="mt-4 flex flex-col md:flex-row items-center justify-center gap-8">
         <div className="flex flex-col items-center justify-center">
@@ -73,7 +73,7 @@ const Course = () => {
 
       <div className="mt-4 py-2 flex items-center justify-center bg-unsij-teak-400">
         <h1 className="text-xl text-center">
-          <strong className="text-2xl pr-2">Nota!!!</strong>
+          <strong className="text-2xl pr-2">¡¡Nota!!</strong>
           La inscripción y el curso se realizan de manera presencial en las
           instalaciones de la Universidad de la Sierra Juárez
         </h1>

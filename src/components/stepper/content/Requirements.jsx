@@ -106,8 +106,8 @@ const Requirements = () => {
 
         <div className="mt-4 py-2 col-span-5 lg:col-span-3 lg:col-start-2 flex items-center justify-center bg-unsij-teak-400">
           <h1 className="text-xl text-center">
-            <strong className="text-2xl pr-2">Nota!!!</strong>
-            Todos los documentos deben ser escaneados para el trámite en línea.
+            <strong className="text-2xl pr-2">¡¡Nota!!</strong>
+            Todos los documentos deben ser escaneados en PDF para el trámite en línea.
           </h1>
         </div>
       </div>

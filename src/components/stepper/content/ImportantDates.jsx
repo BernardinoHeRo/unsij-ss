@@ -9,7 +9,7 @@ const ImportantDates = () => {
             endDate: "2024-06-26"
         },
         {
-            eventName: "Examen de admisión",
+            eventName: "Examen de ingreso",
             startDate: "2024-05-15",
             connector: "Y",
             endDate: "2024-07-01"
