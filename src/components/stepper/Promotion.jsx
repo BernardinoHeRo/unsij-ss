@@ -7,10 +7,10 @@ export const Promotion = () => {
                 <div
                     className="flex flex-col border-r border-gray-700 text-center">
                     <dt className="text-base font-normal leading-6 text-gray-300">
-                        Colegiatura
+                        Inscripción
                     </dt>
                     <dd className="text-3xl font-bold tracking-tight text-green-400">
-                        <span>Gratis</span>
+                        <span>Cero</span>
                     </dd>
                 </div>
                 <div
