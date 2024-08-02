@@ -1,196 +1,197 @@
 const dataCareers = [
-    {
-        "id": 1,
-        "content": {
-            "color": "#1E5B19",
-            "headOfDepartment": "Dr. César Valenzuela Encinas",
-            "email": "iforestal@unsij.edu.mx",
-            "title": "Ingeniería Forestal",
-            "mission": {
-                "title": "Misión",
-                "content": "Formar profesionistas con conocimientos técnicos y científicos que contribuyan al manejo sustentable de los ecosistemas forestales en beneficio de la sociedad, mediante una educación de calidad con base en principios éticos."
-            },
-            "vision": {
-                "title": "Visión",
-                "content": "Consolidarse como un programa educativo líder a nivel nacional en la enseñanza de la ciencia forestal y en la formación de profesionales en el manejo sustentable de los ecosistemas forestales."
-            },
-            "objective": {
-                "title": "Objetivo",
-                "content": "Formar profesionistas con conocimientos, habilidades, valores y aptitudes capaces de manejar los ecosistemas forestales y coadyuvar al desarrollo sustentable del sector forestal."
-            },
-            "admissionProfile": {
-                "title": "Perfil de ingreso",
-                "introduction": "El programa está dirigido a estudiantes que han concluido sus estudios de nivel medio superior. Es deseable que el aspirante tenga:",
-                "options": {
-                    "1": "Interés por el manejo y conservación de los ecosistemas forestales.",
-                    "2": "Afinidad para trabajar con comunidades.",
-                    "3": "Vocación y disciplina en el estudio y resolución de problemas forestales y ambientales.",
-                    "4": "Disposición a trabajar en equipos multidisciplinarios.",
-                    "5": "Gusto por la innovación tecnológica aplicada a los recursos forestales."
-                }
-            },
-            "graduateProfile": {
-                "title": "Perfil de egreso",
-                "introduction": "Quien egrese de ingeniería forestal tendrá las siguientes competencias:",
-                "engineering": {
-                    "1": "Elaborar, ejecutar y evaluar planes integrales de vanguardia que atiendan el manejo forestal, sistemas agroforestales, manejo de fauna silvestre y cuencas hidrográficas.",
-                    "2": "Administrar el proceso de aprovechamiento forestal e impulsar estrategias de producción sostenible considerando las operaciones de su cadena productiva.",
-                    "3": "Actuar bajo un enfoque inter y multidisciplinario en la gestión de los recursos forestales, la sostenibilidad y el desarrollo regional.",
-                    "4": "Influir en la conservación de los ecosistemas forestales para lograr su protección, mejoramiento, rehabilitación y restauración.",
-                    "5": "Promover la igualdad social y género en el ejercicio de profesión en los diferentes ámbitos de la sociedad.",
-                    "6": "Aplicar de forma efectiva en el desarrollo de su profesión y la investigación, tecnologías de vanguardia.",
-                    "7": "Ingresar a posgrados de excelencia acreditados por el Sistema Nacional de Posgrados del Consejo Nacional de Humanidades, Ciencia y Tecnología en el país o en el extranjero.",
-                    "8": "Ejercer en los diferentes sectores de la sociedad u organismos y niveles de gobierno, así como el desarrollo de su propia empresa."
+        {
+            "id": 1,
+            "content": {
+                "color": "#1E5B19",
+                "headOfDepartment": "Dr. César Valenzuela Encinas",
+                "email": "iforestal@unsij.edu.mx",
+                "title": "Ingeniería Forestal",
+                "mission": {
+                    "title": "Misión",
+                    "content": "Formar profesionistas con conocimientos técnicos y científicos que contribuyan al manejo sustentable de los ecosistemas forestales en beneficio de la sociedad, mediante una educación de calidad con base en principios éticos."
                 },
-                "conservation": {
-                    "title": "Quien egrese del área de manejo y conservación tendrá las siguientes competencias:",
-                    "1": "Desempeñarse con responsabilidad social y ética en las áreas de manejo forestal sostenible y la conservación de los bosques para el desarrollo de las comunidades.",
-                    "2": "Fortalecer las capacidades de las comunidades en el manejo de los recursos forestales, impulsando la sostenibilidad a largo plazo."
+                "vision": {
+                    "title": "Visión",
+                    "content": "Consolidarse como un programa educativo líder a nivel nacional en la enseñanza de la ciencia forestal y en la formación de profesionales en el manejo sustentable de los ecosistemas forestales."
                 },
-                "industries": {
-                    "title": "Quien egrese del área de industrias forestales tendrá las siguientes competencias:",
-                    "1": "Desempeñarse con responsabilidad social y ética en áreas de industria forestal.",
-                    "2": "Contribuir con conocimientos técnicos para fortalecer la cadena de valor en el sector forestal, mejorando los procesos de transformación y comercialización, garantizando un aprovechamiento sostenible de los bosques para obtener productos forestales maderables."
-                }
-            },
-            "fieldOfAction": {
-                "title": "Campo de acción",
-                "public": {
-                    "title": "Sector Público",
-                    "1": "En las secretarías, subsecretarías y programas sectoriales en los diferentes niveles de gobierno; federal (SEMARNAT, CONAFOR, PROFEPA, INIFAP, CONANP, CONABIO, etc.), estatal y municipal."
+                "objective": {
+                    "title": "Objetivo",
+                    "content": "Formar profesionistas con conocimientos, habilidades, valores y aptitudes capaces de manejar los ecosistemas forestales y coadyuvar al desarrollo sustentable del sector forestal."
                 },
-                "private": {
-                    "title": "Sector privado",
-                    "1": "Empresas dedicadas a los servicios técnicos forestales y ambientales.",
-                    "2": "La transformación, industrialización y comercialización.",
-                    "3": "La enseñanza, capacitación e investigación."
+                "admissionProfile": {
+                    "title": "Perfil de ingreso",
+                    "introduction": "El programa está dirigido a estudiantes que han concluido sus estudios de nivel medio superior. Es deseable que el aspirante tenga:",
+                    "options": {
+                        "1": "Interés por el manejo y conservación de los ecosistemas forestales.",
+                        "2": "Afinidad para trabajar con comunidades.",
+                        "3": "Vocación y disciplina en el estudio y resolución de problemas forestales y ambientales.",
+                        "4": "Disposición a trabajar en equipos multidisciplinarios.",
+                        "5": "Gusto por la innovación tecnológica aplicada a los recursos forestales."
+                    }
                 },
-                "social": {
-                    "title": "Sector Social",
-                    "1": "Ejidos y comunidades.",
-                    "2": "Sociedades rurales.",
-                    "3": "Asociaciones civiles.",
-                    "4": "Fundaciones civiles."
+                "graduateProfile": {
+                    "title": "Perfil de egreso",
+                    "introduction": "",
+                    "engineering": {
+                        "title": "Ingeniería forestal",
+                        "1": "Elaborar, ejecutar y evaluar planes integrales de vanguardia que atiendan el manejo forestal, sistemas agroforestales, manejo de fauna silvestre y cuencas hidrográficas.",
+                        "2": "Administrar el proceso de aprovechamiento forestal e impulsar estrategias de producción sostenible considerando las operaciones de su cadena productiva.",
+                        "3": "Actuar bajo un enfoque inter y multidisciplinario en la gestión de los recursos forestales, la sostenibilidad y el desarrollo regional.",
+                        "4": "Influir en la conservación de los ecosistemas forestales para lograr su protección, mejoramiento, rehabilitación y restauración.",
+                        "5": "Promover la igualdad social y género en el ejercicio de profesión en los diferentes ámbitos de la sociedad.",
+                        "6": "Aplicar de forma efectiva en el desarrollo de su profesión y la investigación, tecnologías de vanguardia.",
+                        "7": "Ingresar a posgrados de excelencia acreditados por el Sistema Nacional de Posgrados del Consejo Nacional de Humanidades, Ciencia y Tecnología en el país o en el extranjero.",
+                        "8": "Ejercer en los diferentes sectores de la sociedad u organismos y niveles de gobierno, así como el desarrollo de su propia empresa."
+                    },
+                    "conservation": {
+                        "title": "Manejo y conservación",
+                        "1": "Desempeñarse con responsabilidad social y ética en las áreas de manejo forestal sostenible y la conservación de los bosques para el desarrollo de las comunidades.",
+                        "2": "Fortalecer las capacidades de las comunidades en el manejo de los recursos forestales, impulsando la sostenibilidad a largo plazo."
+                    },
+                    "industries": {
+                        "title": "Industrias forestales",
+                        "1": "Desempeñarse con responsabilidad social y ética en áreas de industria forestal.",
+                        "2": "Contribuir con conocimientos técnicos para fortalecer la cadena de valor en el sector forestal, mejorando los procesos de transformación y comercialización, garantizando un aprovechamiento sostenible de los bosques para obtener productos forestales maderables."
+                    }
                 },
-                "international": {
-                    "title": "Organismos Internacionales",
-                    "1": "En programas sectoriales de las organizaciones tales como: la FAO, WWF, OMIT, entre otros."
+                "fieldOfAction": {
+                    "title": "Campo de acción",
+                    "public": {
+                        "title": "Sector Público",
+                        "1": "En las secretarías, subsecretarías y programas sectoriales en los diferentes niveles de gobierno; federal (SEMARNAT, CONAFOR, PROFEPA, INIFAP, CONANP, CONABIO, etc.), estatal y municipal."
+                    },
+                    "private": {
+                        "title": "Sector privado",
+                        "1": "Empresas dedicadas a los servicios técnicos forestales y ambientales.",
+                        "2": "La transformación, industrialización y comercialización.",
+                        "3": "La enseñanza, capacitación e investigación."
+                    },
+                    "social": {
+                        "title": "Sector Social",
+                        "1": "Ejidos y comunidades.",
+                        "2": "Sociedades rurales.",
+                        "3": "Asociaciones civiles.",
+                        "4": "Fundaciones civiles."
+                    },
+                    "international": {
+                        "title": "Organismos Internacionales",
+                        "1": "En programas sectoriales de las organizaciones tales como: la FAO, WWF, OMIT, entre otros."
+                    },
+                    "independent": {
+                        "title": "Forma independiente",
+                        "1": "Brindando servicios de consultoría profesional.",
+                        "2": "Generando nuevas fuentes de empleo en áreas forestales."
+                    },
+                    "education": {
+                        "title": "Instituciones educativas",
+                        "1": "Impartiendo clases a niveles medio superior y superior.",
+                        "2": "Desarrollando investigación."
+                    }
                 },
-                "independent": {
-                    "title": "Forma independiente",
-                    "1": "Brindando servicios de consultoría profesional.",
-                    "2": "Generando nuevas fuentes de empleo en áreas forestales."
-                },
-                "education": {
-                    "title": "Instituciones educativas",
-                    "1": "Impartiendo clases a niveles medio superior y superior.",
-                    "2": "Desarrollando investigación."
-                }
-            },
-            "planEstudios": {
-                "title": "Tira de materias",
-                "firstSemester": {
-                    "title": "Primer semestre",
-                    "content": [
-                        "Fundamentos de matemáticas",
-                        "Química",
-                        "Física",
-                        "Ingeniería forestal y los recursos naturales",
-                        "Ecología",
-                        "Historia del Pensamiento Filosófico"
-                    ]
-                },
-                "secondSemester": {
-                    "title": "Segundo semestre",
-                    "content": [
-                        "Matemáticas",
-                        "Bioquímica",
-                        "Ecofisiología forestal",
-                        "Botánica Forestal",
-                        "Ecosistemas forestales",
-                        "Teoría General de Sistemas"
-                    ]
-                },
-                "thirdSemester": {
-                    "title": "Tercer semestre",
-                    "content": [
-                        "Métodos estadísticos",
-                        "Suelos forestales",
-                        "Forestería Comunitaria y comunicación",
-                        "Dendrometría",
-                        "Semillas y viveros forestales",
-                        "Economía de los recursos forestales"
-                    ]
-                },
-                "fourthSemester": {
-                    "title": "Cuarto semestre",
-                    "content": [
-                        "Muestreo e inventario forestal",
-                        "Principios de topografía",
-                        "Restauración de ecosistemas forestales",
-                        "Silvicultura de bosques templados",
-                        "Genética forestal",
-                        "Política y legislación forestal"
-                    ]
-                },
-                "fifthSemester": {
-                    "title": "Quinto semestre",
-                    "content": [
-                        "Diseños experimentales",
-                        "Geomática",
-                        "Anatomía y tecnología de la madera",
-                        "Silvicultura tropical",
-                        "Mejoramiento genético forestal",
-                        "Recursos forestales no maderables"
-                    ]
-                },
-                "sixthSemester": {
-                    "title": "Sexto semestre",
-                    "content": [
-                        "Liderazgo y emprendimiento forestal",
-                        "Plantaciones forestales",
-                        "Sistemas agroforestales",
-                        "Epidometría",
-                        "Industrias forestales",
-                        "Abastecimiento y caminos forestales"
-                    ]
-                },
-                "sevenSemester": {
-                    "pretitle": "Manejo y Conservación",
-                    "title": "Séptimo semestre",
-                    "content": [
-                        "Formulación y evaluación de proyectos",
-                        "Percepción remota y tecnología espacial",
-                        "Manejo forestal sostenible",
-                        "Evaluación de impacto ambiental",
-                        "Manejo de Fauna Silvestre",
-                        "Protección Forestal"
-                    ]
-                },
-                "eightSemester": {
-                    "pretitle": "Manejo y Conservación",
-                    "title": "Octavo semestre",
-                    "content": [
-                        "Administración de empresas forestales",
-                        "Manejo de cuencas hidrográficas",
-                        "Dendroenergía",
-                        "Taller de programas de manejo",
-                        "Metodología de la investigación",
-                        "Uso de la madera en la construcción"
-                    ]
-                },
-                "ninthSemester": {
-                    "title": "Noveno semestre",
-                    "content": [
-                        "Estancia profesional",
-                        "Seminario de Titulación"
-                    ]
+                "planEstudios": {
+                    "title": "Tira de materias",
+                    "firstSemester": {
+                        "title": "Primer semestre",
+                        "content": [
+                            "Fundamentos de matemáticas",
+                            "Química",
+                            "Física",
+                            "Ingeniería forestal y los recursos naturales",
+                            "Ecología",
+                            "Historia del Pensamiento Filosófico"
+                        ]
+                    },
+                    "secondSemester": {
+                        "title": "Segundo semestre",
+                        "content": [
+                            "Matemáticas",
+                            "Bioquímica",
+                            "Ecofisiología forestal",
+                            "Botánica Forestal",
+                            "Ecosistemas forestales",
+                            "Teoría General de Sistemas"
+                        ]
+                    },
+                    "thirdSemester": {
+                        "title": "Tercer semestre",
+                        "content": [
+                            "Métodos estadísticos",
+                            "Suelos forestales",
+                            "Forestería Comunitaria y comunicación",
+                            "Dendrometría",
+                            "Semillas y viveros forestales",
+                            "Economía de los recursos forestales"
+                        ]
+                    },
+                    "fourthSemester": {
+                        "title": "Cuarto semestre",
+                        "content": [
+                            "Muestreo e inventario forestal",
+                            "Principios de topografía",
+                            "Restauración de ecosistemas forestales",
+                            "Silvicultura de bosques templados",
+                            "Genética forestal",
+                            "Política y legislación forestal"
+                        ]
+                    },
+                    "fifthSemester": {
+                        "title": "Quinto semestre",
+                        "content": [
+                            "Diseños experimentales",
+                            "Geomática",
+                            "Anatomía y tecnología de la madera",
+                            "Silvicultura tropical",
+                            "Mejoramiento genético forestal",
+                            "Recursos forestales no maderables"
+                        ]
+                    },
+                    "sixthSemester": {
+                        "title": "Sexto semestre",
+                        "content": [
+                            "Liderazgo y emprendimiento forestal",
+                            "Plantaciones forestales",
+                            "Sistemas agroforestales",
+                            "Epidometría",
+                            "Industrias forestales",
+                            "Abastecimiento y caminos forestales"
+                        ]
+                    },
+                    "sevenSemester": {
+                        "pretitle": "Manejo y Conservación",
+                        "title": "Séptimo semestre",
+                        "content": [
+                            "Formulación y evaluación de proyectos",
+                            "Percepción remota y tecnología espacial",
+                            "Manejo forestal sostenible",
+                            "Evaluación de impacto ambiental",
+                            "Manejo de Fauna Silvestre",
+                            "Protección Forestal"
+                        ]
+                    },
+                    "eightSemester": {
+                        "pretitle": "Manejo y Conservación",
+                        "title": "Octavo semestre",
+                        "content": [
+                            "Administración de empresas forestales",
+                            "Manejo de cuencas hidrográficas",
+                            "Dendroenergía",
+                            "Taller de programas de manejo",
+                            "Metodología de la investigación",
+                            "Uso de la madera en la construcción"
+                        ]
+                    },
+                    "ninthSemester": {
+                        "title": "Noveno semestre",
+                        "content": [
+                            "Estancia profesional",
+                            "Seminario de Titulación"
+                        ]
+                    }
                 }
             }
-        }
-    },
+        },
 
-    {
+        {
             "id":
                 2,
             "content":
