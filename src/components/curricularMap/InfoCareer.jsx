@@ -10,11 +10,11 @@ export const InfoCareer = ({data}) => {
     const {mission, vision, objective} = data; // Aquí desestructuramos data para acceder a las propiedades
 
     return (
-        <>
+        <div className="bg-gray-900">
             <Mission mission={mission}/>
             <Vision vision={vision}/>
             <Objetive objetive={objective}/>
-        </>
+        </div>
 
     )
 }

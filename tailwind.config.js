@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         serif: ['Georgia', 'Cambria', 'Times New Roman', 'Times', 'serif'],
+        'amsi-pro': ['"Amsi Pro AKS Normal Ultra"', 'sans-serif'],
+        roboto: ['"Roboto"', 'sans-serif'],
       },
       colors: {
         "unsij-daintree": {

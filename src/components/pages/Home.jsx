@@ -5,6 +5,7 @@ import AdmissionProcess from "../stepper/AdmissionProcess.jsx";
 import ScholarShips from "../ScholarShips.jsx";
 import EducativeOffer from "../educativeOffer/EducativeOffer.jsx";
 import CollegeLife from "../collegeLife/CollegeLife.jsx";
+import Location from "../geographicLocation /Location.jsx";
 
 export const Home = () => {
     return (
@@ -15,6 +16,9 @@ export const Home = () => {
             <EducativeOffer/>
             <ScholarShips/>
             <CollegeLife/>
+            <div className="bg-unsij-green-950">
+            <Location/>
+            </div>
         </>
     );
 };

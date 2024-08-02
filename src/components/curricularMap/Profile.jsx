@@ -1,33 +1,32 @@
 import React from 'react';
 import PropTypes from "prop-types";
+import {GoDotFill} from "react-icons/go";
 
-const Profile = ({ data }) => {
-    console.log(data);
+const Profile = ({data}) => {
+    // console.log(data);
 
     return (
-        <div className='flex flex-col items-center px-2 bg-gray-900 '>
-            <span className='max-w-2xl mb-2 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl text-white text-center lg:text-start'>{data.title}</span>
-            <span className='text-lg md:text-2xl md:text-center md:pb-4 text-justify text-white'>{data.introduction}</span>
-
-            <div class="w-screen flex-col m-auto p-8 grid grid-cols-1 md:grid-cols-2 2lg:grid-cols-3 2xl:grid-cols-4 gap-2">
-                {/* Utiliza Object.entries para convertir el objeto en un array de pares [key, value] */}
+        <div className='bg-gray-900 max-w-7xl mx-auto py-2 lg:py-4 font-roboto'>
+            <h1 className="text-2xl md:text-3xl lg:text-5xl text-start bg-gray-800 text-white py-2 px-4 mb-4">
+                {data.title}
+            </h1>
+            <div className='text-base md:text-xl lg:text-2xl text-white text-start px-8'>
+                {data.introduction}
+            </div>
+            <ul className="py-4 px-6 ml-0 md:ml-8 lg:ml-16">
                 {Object.entries(data.options).map(([key, value]) => (
-                    <li key={key} className={`mb-5 sm:flex-row`}>
-                        <div class="relative h-full ml-0 mr-0 sm:mr-10">
-                            <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-900 rounded-lg"></span>
-                            <div class="relative h-full p-5 bg-white border-2 border-blue-900 rounded-lg">
-                                <p class="text-lg md:text-2xl md:text-center md:pb-4 text-justify text-black">{value} </p>
-                            </div>
+                    <li key={key} className="flex items-center justify-start bg-gray-900 py-1 md:py-2 lg:py-3">
+                        <div className="flex items-center justify-center mr-3 text-gray-300">
+                            <GoDotFill size={20}/>
                         </div>
+                        <span className="text-base md:text-base lg:text-2xl text-gray-300">{value}</span>
                     </li>
                 ))}
-            </div>
-
-            <p className='text-lg md:text-2xl md:text-center md:pb-4 text-justify text-white pt-4'>{data.conclusion}</p>
+            </ul>
         </div>
-
     );
-}
+};
+
 // Validación de PropTypes
 Profile.propTypes = {
     data: PropTypes.shape({

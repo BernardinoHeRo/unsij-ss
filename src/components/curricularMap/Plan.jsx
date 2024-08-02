@@ -31,7 +31,7 @@ const Plan = ({ data }) => {
                         if (key === 'title' || key === 'introduction') return null;
                         return (
                             <SwiperSlide key={key}>
-                                <div className='w-full h-full bg-unsij-daintree-700 border-2 flex items-center justify-center cursor-pointer'>
+                                <div className='w-full h-full bg-unsij-daintree-700 border-2 flex items-center justify-center'>
                                     <ul className='w-full h-[95%] bg-unsij-black-50 border-2 border-unsij-black-950 px-4'>
                                         <h2 className='text-lg md:text-2xl pt-2 font-semibold'>{value.title}</h2>
                                         {value.content.map((course, index) => (

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Amsi Pro AKS Normal';
+    src: local('Amsi Pro AKS Normal Ultra'), local('Amsi-Pro-AKS-Normal-Ultra'),
+        url('AmsiProAKSNormal-Ultra.woff2') format('woff2'),
+        url('AmsiProAKSNormal-Ultra.woff') format('woff'),
+        url('AmsiProAKSNormal-Ultra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

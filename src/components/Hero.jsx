@@ -1,7 +1,7 @@
 import React from "react";
 import backgroundImage from "../assets/unsij/background/unsij.jpeg";
 import Divider from "./Divider.jsx"; // Ruta de tu imagen de fondo
-import logo from '../assets/unsij/logo/unsij.png'
+import inscero from '../assets/inscero.png'
 
 export const Hero = () => {
     const divStyle = {
@@ -47,7 +47,7 @@ export const Hero = () => {
                 <div style={overlayStyle}>
                     <h1
                         className="text-unsij-black-50 text-[100px] md:text-[130px] lg:-mt-32 font-serif
-                font-bold [text-shadow:_0_5px_0_rgb(0_59_31_/_80%)]"
+                font-bold [text-shadow:_3px_5px_0_rgb(0_59_31_/_100%)]"
                     >
                         UNSIJ
                     </h1>
@@ -57,6 +57,7 @@ export const Hero = () => {
                     >
                         "Educación con calidad y compromiso social"
                     </p>
+                    {/*
                     <a
                         href="#"
                         className="mt-2 bg-unsij-green-800 text-white font-bold py-2 px-4 rounded-md uppercase
@@ -64,6 +65,7 @@ export const Hero = () => {
                     >
                         <p className='[text-shadow:_0_2px_0_rgb(0_0_0_/_100%)]'>Explora la UNSIJ</p>
                     </a>
+                    */}
                 </div>
             </div>
             <Divider

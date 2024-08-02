@@ -31,7 +31,7 @@ const ImportantDates = () => {
     return (
         <>
             <div className="w-full pb-8">
-                <h1 className="text-center text-black text-xl md:text-3xl 2xl:text-4xl font-bold pt-4 pb-2">
+                <h1 className="text-center text-black text-xl md:text-3xl 2xl:text-4xl font-bold pt-2 pb-4">
                     Fechas importantes
                 </h1>
 

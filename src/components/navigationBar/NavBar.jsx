@@ -20,7 +20,8 @@ export const NavBar = () => {
             {id: 3, text: "Oferta educativa", url: "offer"},
             {id: 4, text: "Servicios", url: "ships"},
             {id: 5, text: "Vida universitaria", url: "college"},
-            {id: 6, text: "Contacto", url: "contact"},
+            {id: 6, text: "Nuestra ubicación", url: "location"},
+            {id: 7, text: "Contacto", url: "contact"},
         ];
 
         setItems(menuItems);
@@ -72,13 +73,10 @@ export const NavBar = () => {
                     to="/"
                     className="flex flex-row gap-1 justify-center items-center"
                 >
-                    <img className="block w-14" src={logo} alt="Logo" style={dropShadowImg}/>
+                    <img className="block ml-2 w-10 md:ml-4 md:w-14" src={logo} alt="Logo" style={dropShadowImg}/>
                 </Link>
-
                 <span className="mr-1 text-white text-4xl lg:hidden font-bold font-serif">UNSIJ</span>
-
                 {/* Links */}
-
                 <div className="hidden lg:flex lg:flex-row items-center gap-8 text-unsij-black-50 ">
                     {items.map(item => {
                         const isRelativeUrl = item.url.startsWith('/');
@@ -86,7 +84,6 @@ export const NavBar = () => {
                         const linkProps = isRelativeUrl
                             ? {to: item.url}
                             : {to: item.url, spy: true, smooth: true, duration: 1000, offset: -navbarHeight};
-
                         return (
                             <LinkComponent
                                 key={item.id}
@@ -103,9 +100,7 @@ export const NavBar = () => {
                             </LinkComponent>
                         );
                     })}
-
                 </div>
-
                 <div className="hidden lg:flex flex-row items-center gap-4">
                     <div>
                         <a
@@ -129,7 +124,7 @@ export const NavBar = () => {
                 <div className="-mr-2 flex lg:hidden">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="text-gray-400 hover:text-white inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:bg-gray-700 transition duration-150 ease-in-out"
+                        className="text-gray-400 hover:text-white inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:bg-gray-700 transition duration-150 ease-in-out mr-2 md:mr-4"
                     >
                         {isOpen ? (
                             <IoMdClose className="block h-8 w-8"/>

@@ -39,16 +39,16 @@ const Stepper = () => {
 
     return (
         <div className="flex flex-col items-center">
-            <div className="w-full flex flex-col items-center justify-center pt-2">
-                <h1 className="font-bold text-3xl md:text-4xl 2xl:text-5xl pb-2">
+            <div className="w-full flex flex-col items-center justify-center">
+                <h1 className="font-bold text-3xl md:text-5xl 2xl:text-6xl pb-4">
                     Proceso de admisión {anio}
                 </h1>
-                <div className="flex flex-row gap-1 md:gap-4 pb-4">
+                <div className="flex flex-row gap-1 md:gap-4 xl:gap-2 pb-4">
                     {/* Mapear los botones del stepper */}
                     {steps.map((step, index) => (
                         <button
                             key={index}
-                            className="text-unsij-black-50 font-bold rounded-r-lg px-6 md:px-6 lg:px-8 2xl:px-10 text-2xl"
+                            className="text-unsij-black-50 font-amsi-pro rounded-r-2xl py-2 px-6 md:px-6 lg:px-8 2xl:px-6 text-2xl"
                             style={{
                                 ...(currentStep === index
                                     ? buttonStyles.active

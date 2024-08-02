@@ -58,14 +58,7 @@ const CurricularMap = () => {
                 onComponentChange={handleComponentChange}
                 activeComponent={activeComponent}
                 color={color}/>
-            <div className='w-full bg-white'>
-                <div className="flex flex-col gap-2 items-center justify-center font-roboto">
-                    <h1 className="pt-8 font-bold text-xl md:text-2xl lg:text-4xl text-center">{title}</h1>
-                    <div className="flex flex-row gap-16 pb-4">
-                        <span className="text-xs md:text-base lg:text-xl  italic">{headOfDepartment}</span>
-                        <span className="text-xs md:text-base lg:text-xl italic">{email}</span>
-                    </div>
-                </div>
+            <div className='w-full bg-white flex flex-col items-center justify-center '>
                 {/*
                 <span className='text-2xl font-bold py-2'>Plan de estudios</span>
                 <span className='text-lg md:text-2xl text-center font-bold'>{title}</span>
@@ -75,15 +68,9 @@ const CurricularMap = () => {
                 <div ref={contentRef} className='w-full'>
                     {/* Renderizar el componente activo basado en el estado */}
                     {activeComponent === 'InfoCareer' && <InfoCareer data={{mission, vision, objective}}/>}
-                    <div className="bg-gray-900">
                     {activeComponent === 'AdmissionProfile' && <Profile data={admissionProfile}/>}
-                    </div>
-                    <div className="bg-gray-900">
                     {activeComponent === 'GraduateProfile' && <Profile data={graduateProfile}/>}
-                    </div>
-                    <div className="bg-gray-900">
                     {activeComponent === 'FieldOfAction' && <FieldOfAction data={fieldOfAction}/>}
-                    </div>
                     {activeComponent === 'Plan' && <Plan data={planEstudios}/>}
                 </div>
             </div>
